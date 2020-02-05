@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,7 +12,7 @@
 		427FE1B423E9914E001D1DA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 427FE1B223E9914E001D1DA6 /* Main.storyboard */; };
 		427FE1B623E99150001D1DA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 427FE1B523E99150001D1DA6 /* Assets.xcassets */; };
 		427FE1B923E99150001D1DA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 427FE1B723E99150001D1DA6 /* LaunchScreen.storyboard */; };
-		427FE1C123E992C6001D1DA6 /* SingUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427FE1C023E992C6001D1DA6 /* SingUpViewController.swift */; };
+		427FE1C123E992C6001D1DA6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427FE1C023E992C6001D1DA6 /* SignUpViewController.swift */; };
 		427FE1C323E9931C001D1DA6 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427FE1C223E9931C001D1DA6 /* SignInViewController.swift */; };
 		42A6A40A23E99C7D001E77A4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A6A40923E99C7D001E77A4 /* HomeViewController.swift */; };
 		42A6A40E23E99C98001E77A4 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A6A40D23E99C98001E77A4 /* CameraViewController.swift */; };
@@ -25,9 +25,12 @@
 		42A6A41F23E9A23D001E77A4 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42A6A41D23E9A23D001E77A4 /* Camera.storyboard */; };
 		42A6A42123E9A25E001E77A4 /* Activity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42A6A42023E9A25E001E77A4 /* Activity.storyboard */; };
 		42A6A42423E9A295001E77A4 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42A6A42223E9A295001E77A4 /* Profile.storyboard */; };
+		42A6A42823EADCFE001E77A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42A6A42723EADCFE001E77A4 /* GoogleService-Info.plist */; };
+		D9D1922FB0FAB3E47C3148B9 /* Pods_Doggable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292DC73035E84493CE42AAAE /* Pods_Doggable.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		292DC73035E84493CE42AAAE /* Pods_Doggable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Doggable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		427FE1A923E9914E001D1DA6 /* Doggable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Doggable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		427FE1AC23E9914E001D1DA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		427FE1AE23E9914E001D1DA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,7 +38,7 @@
 		427FE1B523E99150001D1DA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		427FE1B823E99150001D1DA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		427FE1BA23E99150001D1DA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		427FE1C023E992C6001D1DA6 /* SingUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpViewController.swift; sourceTree = "<group>"; };
+		427FE1C023E992C6001D1DA6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		427FE1C223E9931C001D1DA6 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		42A6A40923E99C7D001E77A4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		42A6A40D23E99C98001E77A4 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +51,9 @@
 		42A6A41E23E9A23D001E77A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Doggable/Doggable/Base.lproj/Camera.storyboard; sourceTree = "<group>"; };
 		42A6A42023E9A25E001E77A4 /* Activity.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Activity.storyboard; sourceTree = "<group>"; };
 		42A6A42323E9A295001E77A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Doggable/Doggable/Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
+		42A6A42723EADCFE001E77A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E8723B0F44A83788F8EF0269 /* Pods-Doggable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doggable.release.xcconfig"; path = "Target Support Files/Pods-Doggable/Pods-Doggable.release.xcconfig"; sourceTree = "<group>"; };
+		ECD83ECC86A9284D60899F17 /* Pods-Doggable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doggable.debug.xcconfig"; path = "Target Support Files/Pods-Doggable/Pods-Doggable.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9D1922FB0FAB3E47C3148B9 /* Pods_Doggable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +73,8 @@
 			children = (
 				427FE1AB23E9914E001D1DA6 /* Doggable */,
 				427FE1AA23E9914E001D1DA6 /* Products */,
+				75BC5EA3DF544395C1459BC5 /* Pods */,
+				9EFEBE5C4716FCCB0EBF7FF4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +96,7 @@
 				427FE1B523E99150001D1DA6 /* Assets.xcassets */,
 				427FE1B723E99150001D1DA6 /* LaunchScreen.storyboard */,
 				427FE1BA23E99150001D1DA6 /* Info.plist */,
+				42A6A42723EADCFE001E77A4 /* GoogleService-Info.plist */,
 			);
 			path = Doggable;
 			sourceTree = "<group>";
@@ -110,13 +120,30 @@
 			children = (
 				42A6A41323E99D14001E77A4 /* DiscoverViewController.swift */,
 				42A6A40923E99C7D001E77A4 /* HomeViewController.swift */,
-				427FE1C023E992C6001D1DA6 /* SingUpViewController.swift */,
+				427FE1C023E992C6001D1DA6 /* SignUpViewController.swift */,
 				42A6A40D23E99C98001E77A4 /* CameraViewController.swift */,
 				42A6A40F23E99CA4001E77A4 /* ActivityViewController.swift */,
 				42A6A41123E99CAE001E77A4 /* ProfileViewController.swift */,
 				427FE1C223E9931C001D1DA6 /* SignInViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		75BC5EA3DF544395C1459BC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ECD83ECC86A9284D60899F17 /* Pods-Doggable.debug.xcconfig */,
+				E8723B0F44A83788F8EF0269 /* Pods-Doggable.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9EFEBE5C4716FCCB0EBF7FF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				292DC73035E84493CE42AAAE /* Pods_Doggable.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 427FE1BD23E99150001D1DA6 /* Build configuration list for PBXNativeTarget "Doggable" */;
 			buildPhases = (
+				3369693CD95C9C96D305980A /* [CP] Check Pods Manifest.lock */,
 				427FE1A523E9914E001D1DA6 /* Sources */,
 				427FE1A623E9914E001D1DA6 /* Frameworks */,
 				427FE1A723E9914E001D1DA6 /* Resources */,
+				CDB44A11746FE9ED7CC26206 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -184,12 +213,55 @@
 				42A6A42123E9A25E001E77A4 /* Activity.storyboard in Resources */,
 				427FE1B623E99150001D1DA6 /* Assets.xcassets in Resources */,
 				42A6A42423E9A295001E77A4 /* Profile.storyboard in Resources */,
+				42A6A42823EADCFE001E77A4 /* GoogleService-Info.plist in Resources */,
 				427FE1B423E9914E001D1DA6 /* Main.storyboard in Resources */,
 				42A6A41C23E9A20D001E77A4 /* Discover.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3369693CD95C9C96D305980A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Doggable-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDB44A11746FE9ED7CC26206 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Doggable/Pods-Doggable-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Doggable/Pods-Doggable-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Doggable/Pods-Doggable-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		427FE1A523E9914E001D1DA6 /* Sources */ = {
@@ -198,7 +270,7 @@
 			files = (
 				42A6A41223E99CAE001E77A4 /* ProfileViewController.swift in Sources */,
 				427FE1AD23E9914E001D1DA6 /* AppDelegate.swift in Sources */,
-				427FE1C123E992C6001D1DA6 /* SingUpViewController.swift in Sources */,
+				427FE1C123E992C6001D1DA6 /* SignUpViewController.swift in Sources */,
 				42A6A41023E99CA4001E77A4 /* ActivityViewController.swift in Sources */,
 				427FE1C323E9931C001D1DA6 /* SignInViewController.swift in Sources */,
 				42A6A40E23E99C98001E77A4 /* CameraViewController.swift in Sources */,
@@ -378,6 +450,7 @@
 		};
 		427FE1BE23E99150001D1DA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECD83ECC86A9284D60899F17 /* Pods-Doggable.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -396,6 +469,7 @@
 		};
 		427FE1BF23E99150001D1DA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8723B0F44A83788F8EF0269 /* Pods-Doggable.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

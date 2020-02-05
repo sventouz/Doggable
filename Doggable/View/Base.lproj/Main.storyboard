@@ -36,9 +36,6 @@
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <connections>
-                                            <segue destination="aHp-tH-vy8" kind="show" id="oEG-gx-Atc"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -78,10 +75,10 @@
             </objects>
             <point key="canvasLocation" x="-136.23188405797103" y="37.5"/>
         </scene>
-        <!--Sing Up View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="ZD2-73-T9H">
             <objects>
-                <viewController id="yIc-z5-zVB" customClass="SingUpViewController" customModule="Doggable" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yIc-z5-zVB" customClass="SignUpViewController" customModule="Doggable" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ygr-fV-lG7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,7 +110,7 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <segue destination="aHp-tH-vy8" kind="show" id="flD-S0-BQx"/>
+                                            <action selector="signUpButton_TouchUpInside:" destination="yIc-z5-zVB" eventType="touchUpInside" id="oYm-om-Cuv"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -150,6 +147,7 @@
                         <outlet property="emailTextField" destination="hWo-ls-QDI" id="ebi-2X-7C3"/>
                         <outlet property="passwordTextField" destination="k0r-CP-67b" id="M6D-Hz-kFJ"/>
                         <outlet property="profileImage" destination="c0s-Np-moL" id="T5L-dO-cJg"/>
+                        <outlet property="signUpButton" destination="fa6-t0-DSZ" id="EaB-LX-9JK"/>
                         <outlet property="usernameTextField" destination="f9G-qE-Ipv" id="0Cg-Sg-BYL"/>
                     </connections>
                 </viewController>
@@ -171,7 +169,4 @@
     <resources>
         <image name="placeholderImg" width="225" height="225"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="flD-S0-BQx"/>
-    </inferredMetricsTieBreakers>
 </document>

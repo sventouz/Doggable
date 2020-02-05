@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "062C0E95-2820-4DC7-8810-365B6B331654"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "12C1B019-C177-4D34-BF61-634F8F4EB696"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Doggable/Controller/SingUpViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "signUpButton_TouchUpInside(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "12C1B019-C177-4D34-BF61-634F8F4EB696 - 8d09ce8c394a9b14"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Doggable.SingUpViewController.signUpButton_TouchUpInside(Any) -&gt; ()"
+                  moduleName = "Doggable"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Ryu/Documents/ios/project/Doggable/Doggable/Controller/SingUpViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "391">
+               </Location>
+               <Location
+                  uuid = "12C1B019-C177-4D34-BF61-634F8F4EB696 - fc168dd786afa3dc"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Doggable.SingUpViewController.signUpButton_TouchUpInside(Any) -&gt; ()"
+                  moduleName = "Doggable"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Ryu/Documents/ios/project/Doggable/Doggable/Controller/SingUpViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "87">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
