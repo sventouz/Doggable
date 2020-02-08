@@ -14,14 +14,77 @@
                     <view key="view" contentMode="scaleToFill" id="EUU-qO-PxC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mNo-m4-wXG">
+                                <rect key="frame" x="0.0" y="88" width="414" height="168"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder-photo" translatesAutoresizingMaskIntoConstraints="NO" id="SuV-Vb-UhV">
+                                        <rect key="frame" x="8" y="14" width="140" height="140"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="kyF-LH-ZlD"/>
+                                            <constraint firstAttribute="height" constant="140" id="ypX-rX-o6L"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AK1-jE-4wg">
+                                        <rect key="frame" x="162" y="14" width="244" height="140"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="SuV-Vb-UhV" firstAttribute="top" secondItem="mNo-m4-wXG" secondAttribute="top" constant="14" id="2DV-tB-Mrf"/>
+                                    <constraint firstAttribute="bottom" secondItem="SuV-Vb-UhV" secondAttribute="bottom" constant="14" id="7o8-Ft-r8H"/>
+                                    <constraint firstItem="AK1-jE-4wg" firstAttribute="top" secondItem="mNo-m4-wXG" secondAttribute="top" constant="14" id="DEm-zk-5cB"/>
+                                    <constraint firstAttribute="trailing" secondItem="AK1-jE-4wg" secondAttribute="trailing" constant="8" id="YDn-q3-Sk8"/>
+                                    <constraint firstAttribute="bottom" secondItem="AK1-jE-4wg" secondAttribute="bottom" constant="14" id="YgJ-w7-0TT"/>
+                                    <constraint firstItem="SuV-Vb-UhV" firstAttribute="leading" secondItem="mNo-m4-wXG" secondAttribute="leading" constant="8" id="eYQ-cl-OeA"/>
+                                    <constraint firstItem="AK1-jE-4wg" firstAttribute="leading" secondItem="SuV-Vb-UhV" secondAttribute="trailing" constant="14" id="nsz-Tq-Ox2"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wy1-iW-NSQ">
+                                <rect key="frame" x="0.0" y="802" width="414" height="60"/>
+                                <color key="backgroundColor" red="0.32156862749999998" green="0.8862745098" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Pek-Sg-eFd"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Share"/>
+                                <connections>
+                                    <action selector="shareButton_TouchUpInside:" destination="2xJ-iT-hLL" eventType="touchUpInside" id="zBc-3f-KgU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Wy1-iW-NSQ" firstAttribute="leading" secondItem="UpB-8W-iHq" secondAttribute="leading" id="Col-JB-q2T"/>
+                            <constraint firstItem="mNo-m4-wXG" firstAttribute="top" secondItem="UpB-8W-iHq" secondAttribute="top" id="V0S-Pq-jfg"/>
+                            <constraint firstItem="Wy1-iW-NSQ" firstAttribute="trailing" secondItem="UpB-8W-iHq" secondAttribute="trailing" id="YdX-g2-skI"/>
+                            <constraint firstItem="Wy1-iW-NSQ" firstAttribute="bottom" secondItem="UpB-8W-iHq" secondAttribute="bottom" id="bJO-uw-Dbb"/>
+                            <constraint firstItem="mNo-m4-wXG" firstAttribute="trailing" secondItem="UpB-8W-iHq" secondAttribute="trailing" id="sWT-lJ-DWM"/>
+                            <constraint firstItem="mNo-m4-wXG" firstAttribute="leading" secondItem="UpB-8W-iHq" secondAttribute="leading" id="uMv-FK-Uqk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="UpB-8W-iHq"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Camera" id="O0I-BE-nP6"/>
+                    <navigationItem key="navigationItem" title="Camera" id="O0I-BE-nP6">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="QCM-kV-TLb">
+                            <connections>
+                                <action selector="remove_TouchUpInside:" destination="2xJ-iT-hLL" id="mI2-49-eu8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cancelButton" destination="QCM-kV-TLb" id="C3h-JI-H6y"/>
+                        <outlet property="captionTextView" destination="AK1-jE-4wg" id="Yvj-hu-fD0"/>
+                        <outlet property="photo" destination="SuV-Vb-UhV" id="aOt-24-3IT"/>
+                        <outlet property="shareButton" destination="Wy1-iW-NSQ" id="g3A-NY-07z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pCf-PX-hA1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3338" y="447"/>
+            <point key="canvasLocation" x="3337.68115942029" y="446.65178571428567"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3gQ-LG-wmr">
@@ -45,5 +108,6 @@
     </scenes>
     <resources>
         <image name="Photo" width="22" height="23"/>
+        <image name="placeholder-photo" width="840" height="600"/>
     </resources>
 </document>

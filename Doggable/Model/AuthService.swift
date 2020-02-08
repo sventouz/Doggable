@@ -30,7 +30,7 @@ class AuthService {
                 return
             }
             let uid = authResult?.user.uid
-            let storageRef = Storage.storage().reference(forURL: config.STRAGE_ROOT_REF).child("profileImage").child(uid!)
+            let storageRef = Storage.storage().reference(forURL: config.STRAGE_ROOT_REF).child("profile_Image").child(uid!)
             storageRef.putData(imageData, metadata: nil) { (metadata, error) in
                 if error != nil {
                     return
