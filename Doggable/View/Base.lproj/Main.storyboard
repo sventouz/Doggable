@@ -10,7 +10,7 @@
         <!--Sign In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SignInViewController" customModule="Doggable" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signInViewController" id="BYZ-38-t0r" customClass="SignInViewController" customModule="Doggable" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,6 +36,9 @@
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="signInButton_TouchUpINside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DKV-OH-UUS"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -69,6 +72,8 @@
                     <connections>
                         <outlet property="emailTextField" destination="rg6-lR-fXG" id="8tR-hi-n9p"/>
                         <outlet property="passwordTextField" destination="EGc-WU-cQ2" id="H9e-y7-axw"/>
+                        <outlet property="signInButton" destination="ARY-Vr-Zia" id="BWn-v1-LVs"/>
+                        <segue destination="aHp-tH-vy8" kind="show" identifier="signInToTabbarVC" id="z3V-Yt-Xec"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -149,6 +154,7 @@
                         <outlet property="profileImage" destination="c0s-Np-moL" id="T5L-dO-cJg"/>
                         <outlet property="signUpButton" destination="fa6-t0-DSZ" id="EaB-LX-9JK"/>
                         <outlet property="usernameTextField" destination="f9G-qE-Ipv" id="0Cg-Sg-BYL"/>
+                        <segue destination="aHp-tH-vy8" kind="show" identifier="signInToTabbarVC" id="8cG-37-a6x"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iIg-Sl-G5D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -169,4 +175,7 @@
     <resources>
         <image name="placeholderImg" width="225" height="225"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="z3V-Yt-Xec"/>
+    </inferredMetricsTieBreakers>
 </document>

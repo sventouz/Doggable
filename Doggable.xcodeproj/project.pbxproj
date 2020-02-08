@@ -26,6 +26,10 @@
 		42A6A42123E9A25E001E77A4 /* Activity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42A6A42023E9A25E001E77A4 /* Activity.storyboard */; };
 		42A6A42423E9A295001E77A4 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42A6A42223E9A295001E77A4 /* Profile.storyboard */; };
 		42A6A42823EADCFE001E77A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42A6A42723EADCFE001E77A4 /* GoogleService-Info.plist */; };
+		42EA8B7523EE582E00A33780 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA8B7423EE582E00A33780 /* AuthService.swift */; };
+		42EA8B7823EE632600A33780 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA8B7723EE632600A33780 /* Config.swift */; };
+		42EA8B7D23EE650F00A33780 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 42EA8B7A23EE650F00A33780 /* ProgressHUD.bundle */; };
+		42EA8B7E23EE650F00A33780 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EA8B7C23EE650F00A33780 /* ProgressHUD.m */; };
 		D9D1922FB0FAB3E47C3148B9 /* Pods_Doggable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292DC73035E84493CE42AAAE /* Pods_Doggable.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +56,12 @@
 		42A6A42023E9A25E001E77A4 /* Activity.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Activity.storyboard; sourceTree = "<group>"; };
 		42A6A42323E9A295001E77A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Doggable/Doggable/Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
 		42A6A42723EADCFE001E77A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		42EA8B7423EE582E00A33780 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		42EA8B7723EE632600A33780 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		42EA8B7923EE650E00A33780 /* Doggable-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Doggable-Bridging-Header.h"; sourceTree = "<group>"; };
+		42EA8B7A23EE650F00A33780 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		42EA8B7B23EE650F00A33780 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		42EA8B7C23EE650F00A33780 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
 		E8723B0F44A83788F8EF0269 /* Pods-Doggable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doggable.release.xcconfig"; path = "Target Support Files/Pods-Doggable/Pods-Doggable.release.xcconfig"; sourceTree = "<group>"; };
 		ECD83ECC86A9284D60899F17 /* Pods-Doggable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doggable.debug.xcconfig"; path = "Target Support Files/Pods-Doggable/Pods-Doggable.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,14 +99,17 @@
 		427FE1AB23E9914E001D1DA6 /* Doggable */ = {
 			isa = PBXGroup;
 			children = (
-				427FE1AC23E9914E001D1DA6 /* AppDelegate.swift */,
-				427FE1AE23E9914E001D1DA6 /* SceneDelegate.swift */,
+				42EA8B7623EE583E00A33780 /* Model */,
 				42A6A42523E9A75C001E77A4 /* View */,
 				42A6A42623E9A772001E77A4 /* Controller */,
-				427FE1B523E99150001D1DA6 /* Assets.xcassets */,
-				427FE1B723E99150001D1DA6 /* LaunchScreen.storyboard */,
 				427FE1BA23E99150001D1DA6 /* Info.plist */,
 				42A6A42723EADCFE001E77A4 /* GoogleService-Info.plist */,
+				427FE1AC23E9914E001D1DA6 /* AppDelegate.swift */,
+				427FE1AE23E9914E001D1DA6 /* SceneDelegate.swift */,
+				42EA8B7A23EE650F00A33780 /* ProgressHUD.bundle */,
+				42EA8B7B23EE650F00A33780 /* ProgressHUD.h */,
+				42EA8B7C23EE650F00A33780 /* ProgressHUD.m */,
+				42EA8B7923EE650E00A33780 /* Doggable-Bridging-Header.h */,
 			);
 			path = Doggable;
 			sourceTree = "<group>";
@@ -111,6 +124,8 @@
 				42A6A41823E9A1C1001E77A4 /* Home.storyboard */,
 				42A6A41523E99FBB001E77A4 /* Tab.storyboard */,
 				427FE1B223E9914E001D1DA6 /* Main.storyboard */,
+				427FE1B523E99150001D1DA6 /* Assets.xcassets */,
+				427FE1B723E99150001D1DA6 /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -127,6 +142,15 @@
 				427FE1C223E9931C001D1DA6 /* SignInViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		42EA8B7623EE583E00A33780 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42EA8B7423EE582E00A33780 /* AuthService.swift */,
+				42EA8B7723EE632600A33780 /* Config.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		75BC5EA3DF544395C1459BC5 /* Pods */ = {
@@ -180,6 +204,7 @@
 				TargetAttributes = {
 					427FE1A823E9914E001D1DA6 = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -206,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42EA8B7D23EE650F00A33780 /* ProgressHUD.bundle in Resources */,
 				42A6A41723E99FBB001E77A4 /* Tab.storyboard in Resources */,
 				42A6A41F23E9A23D001E77A4 /* Camera.storyboard in Resources */,
 				42A6A41A23E9A1C1001E77A4 /* Home.storyboard in Resources */,
@@ -272,9 +298,12 @@
 				427FE1AD23E9914E001D1DA6 /* AppDelegate.swift in Sources */,
 				427FE1C123E992C6001D1DA6 /* SignUpViewController.swift in Sources */,
 				42A6A41023E99CA4001E77A4 /* ActivityViewController.swift in Sources */,
+				42EA8B7823EE632600A33780 /* Config.swift in Sources */,
 				427FE1C323E9931C001D1DA6 /* SignInViewController.swift in Sources */,
+				42EA8B7E23EE650F00A33780 /* ProgressHUD.m in Sources */,
 				42A6A40E23E99C98001E77A4 /* CameraViewController.swift in Sources */,
 				427FE1AF23E9914E001D1DA6 /* SceneDelegate.swift in Sources */,
+				42EA8B7523EE582E00A33780 /* AuthService.swift in Sources */,
 				42A6A40A23E99C7D001E77A4 /* HomeViewController.swift in Sources */,
 				42A6A41423E99D14001E77A4 /* DiscoverViewController.swift in Sources */,
 			);
@@ -453,6 +482,7 @@
 			baseConfigurationReference = ECD83ECC86A9284D60899F17 /* Pods-Doggable.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5DP37SM992;
 				INFOPLIST_FILE = Doggable/Info.plist;
@@ -462,6 +492,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.higuchiryunosuke.Doggable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Doggable/Doggable-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -472,6 +504,7 @@
 			baseConfigurationReference = E8723B0F44A83788F8EF0269 /* Pods-Doggable.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5DP37SM992;
 				INFOPLIST_FILE = Doggable/Info.plist;
@@ -481,6 +514,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.higuchiryunosuke.Doggable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Doggable/Doggable-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

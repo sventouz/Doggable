@@ -17,7 +17,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="cAk-ub-VPS"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="TXr-da-p46"/>
+                    <navigationItem key="navigationItem" title="Home" id="TXr-da-p46">
+                        <barButtonItem key="leftBarButtonItem" title="LogOut" id="WFl-NO-3A7">
+                            <connections>
+                                <action selector="logout_TouchUpInside:" destination="9X9-od-NGb" id="5SJ-mP-m49"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tr9-cL-EZ0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
