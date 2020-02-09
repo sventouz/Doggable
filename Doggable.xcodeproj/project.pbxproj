@@ -30,6 +30,8 @@
 		42EA8B7823EE632600A33780 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA8B7723EE632600A33780 /* Config.swift */; };
 		42EA8B7D23EE650F00A33780 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 42EA8B7A23EE650F00A33780 /* ProgressHUD.bundle */; };
 		42EA8B7E23EE650F00A33780 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EA8B7C23EE650F00A33780 /* ProgressHUD.m */; };
+		7FFD530C23EFAAB40088A385 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFD530B23EFAAB40088A385 /* Post.swift */; };
+		7FFD531123EFBE2A0088A385 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFD531023EFBE2A0088A385 /* HomeTableViewCell.swift */; };
 		D9D1922FB0FAB3E47C3148B9 /* Pods_Doggable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292DC73035E84493CE42AAAE /* Pods_Doggable.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,8 @@
 		42EA8B7A23EE650F00A33780 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
 		42EA8B7B23EE650F00A33780 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		42EA8B7C23EE650F00A33780 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		7FFD530B23EFAAB40088A385 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		7FFD531023EFBE2A0088A385 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		E8723B0F44A83788F8EF0269 /* Pods-Doggable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doggable.release.xcconfig"; path = "Target Support Files/Pods-Doggable/Pods-Doggable.release.xcconfig"; sourceTree = "<group>"; };
 		ECD83ECC86A9284D60899F17 /* Pods-Doggable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doggable.debug.xcconfig"; path = "Target Support Files/Pods-Doggable/Pods-Doggable.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +144,7 @@
 				42A6A40F23E99CA4001E77A4 /* ActivityViewController.swift */,
 				42A6A41123E99CAE001E77A4 /* ProfileViewController.swift */,
 				427FE1C223E9931C001D1DA6 /* SignInViewController.swift */,
+				7FFD531023EFBE2A0088A385 /* HomeTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 			children = (
 				42EA8B7423EE582E00A33780 /* AuthService.swift */,
 				42EA8B7723EE632600A33780 /* Config.swift */,
+				7FFD530B23EFAAB40088A385 /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -296,8 +302,10 @@
 			files = (
 				42A6A41223E99CAE001E77A4 /* ProfileViewController.swift in Sources */,
 				427FE1AD23E9914E001D1DA6 /* AppDelegate.swift in Sources */,
+				7FFD531123EFBE2A0088A385 /* HomeTableViewCell.swift in Sources */,
 				427FE1C123E992C6001D1DA6 /* SignUpViewController.swift in Sources */,
 				42A6A41023E99CA4001E77A4 /* ActivityViewController.swift in Sources */,
+				7FFD530C23EFAAB40088A385 /* Post.swift in Sources */,
 				42EA8B7823EE632600A33780 /* Config.swift in Sources */,
 				427FE1C323E9931C001D1DA6 /* SignInViewController.swift in Sources */,
 				42EA8B7E23EE650F00A33780 /* ProgressHUD.m in Sources */,
