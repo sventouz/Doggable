@@ -39,6 +39,7 @@
 		42EA8B8C23FAB3CC00A33780 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA8B8B23FAB3CC00A33780 /* Api.swift */; };
 		42EA8B8E23FAB45F00A33780 /* CommnetApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA8B8D23FAB45F00A33780 /* CommnetApi.swift */; };
 		42EA8B9023FAB71700A33780 /* Post_CommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA8B8F23FAB71700A33780 /* Post_CommentApi.swift */; };
+		42EA8B9223FDEE0000A33780 /* HeaderProfileCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA8B9123FDEE0000A33780 /* HeaderProfileCollectionReusableView.swift */; };
 		7FFD530C23EFAAB40088A385 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFD530B23EFAAB40088A385 /* Post.swift */; };
 		7FFD531123EFBE2A0088A385 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFD531023EFBE2A0088A385 /* HomeTableViewCell.swift */; };
 		D9D1922FB0FAB3E47C3148B9 /* Pods_Doggable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292DC73035E84493CE42AAAE /* Pods_Doggable.framework */; };
@@ -82,6 +83,7 @@
 		42EA8B8B23FAB3CC00A33780 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		42EA8B8D23FAB45F00A33780 /* CommnetApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommnetApi.swift; sourceTree = "<group>"; };
 		42EA8B8F23FAB71700A33780 /* Post_CommentApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post_CommentApi.swift; sourceTree = "<group>"; };
+		42EA8B9123FDEE0000A33780 /* HeaderProfileCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderProfileCollectionReusableView.swift; sourceTree = "<group>"; };
 		7FFD530B23EFAAB40088A385 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		7FFD531023EFBE2A0088A385 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		E8723B0F44A83788F8EF0269 /* Pods-Doggable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doggable.release.xcconfig"; path = "Target Support Files/Pods-Doggable/Pods-Doggable.release.xcconfig"; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				42A6A40D23E99C98001E77A4 /* CameraViewController.swift */,
 				42A6A40F23E99CA4001E77A4 /* ActivityViewController.swift */,
 				42A6A41123E99CAE001E77A4 /* ProfileViewController.swift */,
+				42EA8B9123FDEE0000A33780 /* HeaderProfileCollectionReusableView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42EA8B9223FDEE0000A33780 /* HeaderProfileCollectionReusableView.swift in Sources */,
 				42EA8B8E23FAB45F00A33780 /* CommnetApi.swift in Sources */,
 				42A6A41223E99CAE001E77A4 /* ProfileViewController.swift in Sources */,
 				42EA8B8A23FAB19500A33780 /* UserApi.swift in Sources */,
