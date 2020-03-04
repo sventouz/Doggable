@@ -26,6 +26,8 @@
 		42A6A42123E9A25E001E77A4 /* Activity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42A6A42023E9A25E001E77A4 /* Activity.storyboard */; };
 		42A6A42423E9A295001E77A4 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42A6A42223E9A295001E77A4 /* Profile.storyboard */; };
 		42A6A42823EADCFE001E77A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42A6A42723EADCFE001E77A4 /* GoogleService-Info.plist */; };
+		42D5CBAD240A123A00616AA6 /* FeedApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D5CBAC240A123A00616AA6 /* FeedApi.swift */; };
+		42D5CBAF240A475E00616AA6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D5CBAE240A475E00616AA6 /* SearchViewController.swift */; };
 		42EA8B7523EE582E00A33780 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA8B7423EE582E00A33780 /* AuthService.swift */; };
 		42EA8B7823EE632600A33780 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA8B7723EE632600A33780 /* Config.swift */; };
 		42EA8B7D23EE650F00A33780 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 42EA8B7A23EE650F00A33780 /* ProgressHUD.bundle */; };
@@ -40,6 +42,12 @@
 		42EA8B8E23FAB45F00A33780 /* CommnetApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA8B8D23FAB45F00A33780 /* CommnetApi.swift */; };
 		42EA8B9023FAB71700A33780 /* Post_CommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA8B8F23FAB71700A33780 /* Post_CommentApi.swift */; };
 		42EA8B9223FDEE0000A33780 /* HeaderProfileCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA8B9123FDEE0000A33780 /* HeaderProfileCollectionReusableView.swift */; };
+		42EA8B9424068E5A00A33780 /* MyPostApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA8B9324068E5A00A33780 /* MyPostApi.swift */; };
+		42EA8B9624069B1B00A33780 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA8B9524069B1B00A33780 /* PhotoCollectionViewCell.swift */; };
+		42EA8B98240934F900A33780 /* HelperService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA8B97240934F900A33780 /* HelperService.swift */; };
+		42EA8B9A2409D5DC00A33780 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA8B992409D5DC00A33780 /* PeopleViewController.swift */; };
+		42EA8B9C2409D61E00A33780 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA8B9B2409D61E00A33780 /* PeopleTableViewCell.swift */; };
+		42EA8BA02409DD3A00A33780 /* FollowApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA8B9F2409DD3A00A33780 /* FollowApi.swift */; };
 		7FFD530C23EFAAB40088A385 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFD530B23EFAAB40088A385 /* Post.swift */; };
 		7FFD531123EFBE2A0088A385 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFD531023EFBE2A0088A385 /* HomeTableViewCell.swift */; };
 		D9D1922FB0FAB3E47C3148B9 /* Pods_Doggable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292DC73035E84493CE42AAAE /* Pods_Doggable.framework */; };
@@ -68,6 +76,8 @@
 		42A6A42023E9A25E001E77A4 /* Activity.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Activity.storyboard; sourceTree = "<group>"; };
 		42A6A42323E9A295001E77A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Doggable/Doggable/Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
 		42A6A42723EADCFE001E77A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		42D5CBAC240A123A00616AA6 /* FeedApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedApi.swift; sourceTree = "<group>"; };
+		42D5CBAE240A475E00616AA6 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		42EA8B7423EE582E00A33780 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		42EA8B7723EE632600A33780 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		42EA8B7923EE650E00A33780 /* Doggable-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Doggable-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -84,6 +94,12 @@
 		42EA8B8D23FAB45F00A33780 /* CommnetApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommnetApi.swift; sourceTree = "<group>"; };
 		42EA8B8F23FAB71700A33780 /* Post_CommentApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post_CommentApi.swift; sourceTree = "<group>"; };
 		42EA8B9123FDEE0000A33780 /* HeaderProfileCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderProfileCollectionReusableView.swift; sourceTree = "<group>"; };
+		42EA8B9324068E5A00A33780 /* MyPostApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostApi.swift; sourceTree = "<group>"; };
+		42EA8B9524069B1B00A33780 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		42EA8B97240934F900A33780 /* HelperService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperService.swift; sourceTree = "<group>"; };
+		42EA8B992409D5DC00A33780 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		42EA8B9B2409D61E00A33780 /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
+		42EA8B9F2409DD3A00A33780 /* FollowApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowApi.swift; sourceTree = "<group>"; };
 		7FFD530B23EFAAB40088A385 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		7FFD531023EFBE2A0088A385 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		E8723B0F44A83788F8EF0269 /* Pods-Doggable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doggable.release.xcconfig"; path = "Target Support Files/Pods-Doggable/Pods-Doggable.release.xcconfig"; sourceTree = "<group>"; };
@@ -167,7 +183,11 @@
 				42A6A40D23E99C98001E77A4 /* CameraViewController.swift */,
 				42A6A40F23E99CA4001E77A4 /* ActivityViewController.swift */,
 				42A6A41123E99CAE001E77A4 /* ProfileViewController.swift */,
+				42EA8B992409D5DC00A33780 /* PeopleViewController.swift */,
+				42EA8B9B2409D61E00A33780 /* PeopleTableViewCell.swift */,
 				42EA8B9123FDEE0000A33780 /* HeaderProfileCollectionReusableView.swift */,
+				42EA8B9524069B1B00A33780 /* PhotoCollectionViewCell.swift */,
+				42D5CBAE240A475E00616AA6 /* SearchViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -182,9 +202,13 @@
 				42EA8B8523F41B7A00A33780 /* Comment.swift */,
 				42EA8B8723FAAFAE00A33780 /* PostApi.swift */,
 				42EA8B8923FAB19500A33780 /* UserApi.swift */,
+				42EA8B9324068E5A00A33780 /* MyPostApi.swift */,
 				42EA8B8B23FAB3CC00A33780 /* Api.swift */,
 				42EA8B8D23FAB45F00A33780 /* CommnetApi.swift */,
 				42EA8B8F23FAB71700A33780 /* Post_CommentApi.swift */,
+				42EA8B97240934F900A33780 /* HelperService.swift */,
+				42EA8B9F2409DD3A00A33780 /* FollowApi.swift */,
+				42D5CBAC240A123A00616AA6 /* FeedApi.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -331,29 +355,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				42EA8B9223FDEE0000A33780 /* HeaderProfileCollectionReusableView.swift in Sources */,
+				42EA8B9A2409D5DC00A33780 /* PeopleViewController.swift in Sources */,
+				42EA8B9624069B1B00A33780 /* PhotoCollectionViewCell.swift in Sources */,
+				42EA8B9C2409D61E00A33780 /* PeopleTableViewCell.swift in Sources */,
 				42EA8B8E23FAB45F00A33780 /* CommnetApi.swift in Sources */,
 				42A6A41223E99CAE001E77A4 /* ProfileViewController.swift in Sources */,
 				42EA8B8A23FAB19500A33780 /* UserApi.swift in Sources */,
 				427FE1AD23E9914E001D1DA6 /* AppDelegate.swift in Sources */,
 				7FFD531123EFBE2A0088A385 /* HomeTableViewCell.swift in Sources */,
 				427FE1C123E992C6001D1DA6 /* SignUpViewController.swift in Sources */,
+				42D5CBAF240A475E00616AA6 /* SearchViewController.swift in Sources */,
 				42A6A41023E99CA4001E77A4 /* ActivityViewController.swift in Sources */,
 				7FFD530C23EFAAB40088A385 /* Post.swift in Sources */,
 				42EA8B8423F2984500A33780 /* CommentTableViewCell.swift in Sources */,
 				42EA8B8623F41B7A00A33780 /* Comment.swift in Sources */,
 				42EA8B7823EE632600A33780 /* Config.swift in Sources */,
 				427FE1C323E9931C001D1DA6 /* SignInViewController.swift in Sources */,
+				42EA8B9424068E5A00A33780 /* MyPostApi.swift in Sources */,
 				42EA8B8223F2980500A33780 /* CommentViewController.swift in Sources */,
+				42EA8B98240934F900A33780 /* HelperService.swift in Sources */,
 				42EA8B8C23FAB3CC00A33780 /* Api.swift in Sources */,
 				42EA8B8023F24A3700A33780 /* User.swift in Sources */,
 				42EA8B7E23EE650F00A33780 /* ProgressHUD.m in Sources */,
 				42EA8B9023FAB71700A33780 /* Post_CommentApi.swift in Sources */,
 				42A6A40E23E99C98001E77A4 /* CameraViewController.swift in Sources */,
+				42D5CBAD240A123A00616AA6 /* FeedApi.swift in Sources */,
 				427FE1AF23E9914E001D1DA6 /* SceneDelegate.swift in Sources */,
 				42EA8B8823FAAFAE00A33780 /* PostApi.swift in Sources */,
 				42EA8B7523EE582E00A33780 /* AuthService.swift in Sources */,
 				42A6A40A23E99C7D001E77A4 /* HomeViewController.swift in Sources */,
 				42A6A41423E99D14001E77A4 /* DiscoverViewController.swift in Sources */,
+				42EA8BA02409DD3A00A33780 /* FollowApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

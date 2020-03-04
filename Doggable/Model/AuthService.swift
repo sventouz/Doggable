@@ -48,7 +48,18 @@ class AuthService {
         let ref = Database.database().reference()
         let userReference = ref.child("users")
         let newUserReference = userReference.child(uid)
-        newUserReference.setValue(["username": username, "email": email, "profileImageUrl": profileImageUrl])
+        newUserReference.setValue(["username": username, "username_lowercase": username.lowercased(), "email": email, "profileImageUrl": profileImageUrl])
         onSuccess()
+    }
+    
+    static func logout(onSuccess: @escaping () -> Void, onError: @escaping (_ errorMessage: String?) -> Void) {
+        
+        do {
+            try Auth.auth().signOut()
+            onSuccess()
+        } catch let logoutError {
+            onError(logoutError.localizedDescription)
+        }
+        
     }
 }

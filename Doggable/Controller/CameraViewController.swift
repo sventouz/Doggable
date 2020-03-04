@@ -96,6 +96,10 @@ class CameraViewController: UIViewController {
                 ProgressHUD.showError(error!.localizedDescription)
                 return
             }
+            guard let currentUser = Auth.auth().currentUser else {
+                return
+            }
+            Database.database().reference().child("feed").child(currentUser.uid).child(newPostId!).setValue(true)
             ProgressHUD.showSuccess("Success!")
             self.clean()
             self.tabBarController?.selectedIndex = 0

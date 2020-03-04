@@ -14,8 +14,16 @@ class PostApi {
     func observePosts(completion: @escaping(Post)-> Void) {
         REF_POSTS.observe(.childAdded) { (snapshot) in
             if let dict = snapshot.value as? [String: Any] {
-                let newPost = Post.transformPost(dict: dict, key: snapshot.key)
+                let newPost = Post.transformPostPhoto(dict: dict, key: snapshot.key)
                 completion(newPost)
+            }
+        }
+    }
+    func observePost(withId id: String, completion: @escaping(Post)-> Void) {
+        REF_POSTS.child(id).observeSingleEvent(of: DataEventType.value) { (snapshot) in
+            if let dict = snapshot.value as? [String: Any] {
+                let post = Post.transformPostPhoto(dict: dict, key: snapshot.key)
+                completion(post)
             }
         }
     }

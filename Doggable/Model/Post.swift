@@ -20,7 +20,7 @@ class Post {
 }
 
 extension Post {
-    static func transformPost(dict: [String: Any], key: String) -> Post {
+    static func transformPostPhoto(dict: [String: Any], key: String) -> Post {
         let post  = Post()
         post.id = key
         post.caption = dict["caption"] as? String

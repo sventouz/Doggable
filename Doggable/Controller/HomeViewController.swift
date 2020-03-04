@@ -8,7 +8,6 @@
 
 import UIKit
 import FirebaseAuth
-import FirebaseDatabase
 import SDWebImage
 
 class HomeViewController: UIViewController {
@@ -27,16 +26,22 @@ class HomeViewController: UIViewController {
     }
     
     func loadPosts() {
-        activityIndicatorView.startAnimating()
-        Api.Post.observePosts { (post) in
+        guard let currentUser = Auth.auth().currentUser else {
+            return
+        }
+        Api.Feed.observeFeed(withId: currentUser.uid) { (post) in
             guard let postId = post.uid else {
                 return
             }
             self.fetchUser(uid: postId, completed: {
                 self.posts.append(post)
-                self.activityIndicatorView.stopAnimating()
                 self.tableView.reloadData()
             })
+        }
+        Api.Feed.observeFeedRemoved(withId: currentUser.uid) { (post) in
+            self.posts = self.posts.filter { $0.id != post.id }
+            self.users = self.users.filter { $0.id != post.uid }
+            self.tableView.reloadData()
         }
     }
     
@@ -48,15 +53,13 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func logout_TouchUpInside(_ sender: Any) {
-        do {
-            try Auth.auth().signOut()
-        } catch let logoutError {
-            print(logoutError)
+        AuthService.logout(onSuccess: {
+            let storybourd = UIStoryboard(name: "Main", bundle: nil)
+            let signInVC = storybourd.instantiateViewController(withIdentifier: "signInViewController")
+            self.present(signInVC, animated: true, completion: nil)
+        }) { (errorMessage) in
+            ProgressHUD.showError(errorMessage)
         }
-        
-        let storybourd = UIStoryboard(name: "Main", bundle: nil)
-        let signInVC = storybourd.instantiateViewController(withIdentifier: "signInViewController")
-        self.present(signInVC, animated: true, completion: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

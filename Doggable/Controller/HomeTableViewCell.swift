@@ -50,18 +50,14 @@ class HomeTableViewCell: UITableViewCell {
             likes = post["likes"] as? [String : Bool] ?? [:]
             var likeCount = post["likeCount"] as? Int ?? 0
             if let _ = likes[uid] {
-              // Unstar the post and remove self from stars
               likeCount -= 1
               likes.removeValue(forKey: uid)
             } else {
-              // Star the post and add self to stars
               likeCount += 1
               likes[uid] = true
             }
             post["likeCount"] = likeCount as AnyObject?
             post["likes"] = likes as AnyObject?
-
-            // Set value and report transaction success
             currentData.value = post
 
             return TransactionResult.success(withValue: currentData)
@@ -72,7 +68,7 @@ class HomeTableViewCell: UITableViewCell {
             print(error.localizedDescription)
           }
             if let dict = snapshot?.value as? [String: Any] {
-                let post = Post.transformPost(dict: dict, key: snapshot!.key)
+                let post = Post.transformPostPhoto(dict: dict, key: snapshot!.key)
                 self.updateLike(post: post)
             }
         }
@@ -109,7 +105,7 @@ class HomeTableViewCell: UITableViewCell {
         }
         Api.Post.REF_POSTS.child(post!.id!).observeSingleEvent(of: .value) { (snapshot) in
             if let dict = snapshot.value as? [String: Any] {
-                let post = Post.transformPost(dict: dict, key: snapshot.key)
+                let post = Post.transformPostPhoto(dict: dict, key: snapshot.key)
                 self.updateLike(post: post)
             }
         }
